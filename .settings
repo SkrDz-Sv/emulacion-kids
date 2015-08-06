@@ -1,0 +1,15 @@
+[Breakpoints]
+Count=0
+
+[FCommit]
+LastCommit="Subida inicial\n---- Esta línea y las siguientes serán ignoradas ----\n\n M      ."
+
+[OpenFile]
+Count=1
+Active=1
+File[1]=".src/FMain.form"
+
+[VersionControl]
+User="skrdz"
+RememberPassword=1
+

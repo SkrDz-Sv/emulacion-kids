@@ -1,0 +1,8 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,50,50)
+  { Label1 Label
+    MoveScaled(1,2,24,4)
+  }
+}
