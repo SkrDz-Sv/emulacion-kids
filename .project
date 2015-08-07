@@ -1,8 +1,11 @@
 # Gambas Project File 3.0
+# Compiled with Gambas 3.7.90
 Title=Emulación NES - SNES - Nintendo 64
 Startup=FMain
-Component=gb.settings
+Version=0.0.1
 Component=gb.image
 Component=gb.gtk
 Component=gb.form
-
+Component=gb.settings
+TabSize=2
+Packager=1

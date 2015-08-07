@@ -7,3 +7,17 @@ End
 Public Sub Form_Open()
 
 End
+
+
+Public Sub btnConfig2_Click()
+
+  Me.Close()
+
+End
+
+Public Sub btnConfig_Click()
+
+  Dim config As New FrmConfig
+  config.Show()
+  
+End
