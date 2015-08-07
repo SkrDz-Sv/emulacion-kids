@@ -7,5 +7,7 @@ Emulación NES - SNES - Nintendo 64
 gb.image
 gb.gtk
 gb.form
+gb.db
+gb.db.sqlite3
 gb.settings
 
