@@ -8,7 +8,7 @@ Count=0
 Path="exec/emulacion-kids.gambas"
 
 [FCommit]
-LastCommit="Ventana inicial.\n\n---- Esta línea y las siguientes serán ignoradas ----\n\nA       .directory\nA       .gitignore\nA       .icon.png\nA       .project\nA       .settings\nA       .src\nA       .src/FMain.class\nA       .src/FMain.form"
+LastCommit="Adición de ejecutable (gambas) y paquete de instalación para la distribución Ubuntu.\n\n---- Esta línea y las siguientes serán ignoradas ----\n\nM       .gambas/GDKJOYSTICK\nA       .hidden\nA       .hidden/CHANGELOG\nM       .project\nM       .settings\nM       .startup\nA       distribucion\nA       distribucion/ubuntu\nA       distribucion/ubuntu/emulacion-kids_0.0.2-0ubuntu1.diff.gz\nA       distribucion/ubuntu/emulacion-kids_0.0.2-0ubuntu1.dsc\nA       distribucion/ubuntu/emulacion-kids_0.0.2-0ubuntu1_all.deb\nA       distribucion/ubuntu/emulacion-kids_0.0.2-0ubuntu1_amd64.changes\nA       distribucion/ubuntu/emulacion-kids_0.0.2.orig.tar.gz\nA       exec\nA       exec/emulacion-kids.gambas"
 
 [OpenFile]
 Count=2
