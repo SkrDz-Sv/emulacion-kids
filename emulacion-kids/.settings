@@ -1,16 +1,25 @@
 [Breakpoints]
 Count=0
 
+[DebugWindow]
+Count=0
+
+[Executable]
+Path="exec/emulacion-kids.gambas"
+
 [FCommit]
 LastCommit="Ventana inicial.\n\n---- Esta línea y las siguientes serán ignoradas ----\n\nA       .directory\nA       .gitignore\nA       .icon.png\nA       .project\nA       .settings\nA       .src\nA       .src/FMain.class\nA       .src/FMain.form"
 
 [OpenFile]
 Count=2
-Active=2
+Active=1
 File[1]=".src/FMain.form"
 File[2]=".src/gdkjoystick.class:17.68"
 
 [VersionControl]
 User="skrdz"
 RememberPassword=1
+
+[Watches]
+Count=0
 
