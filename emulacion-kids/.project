@@ -1,15 +1,11 @@
 # Gambas Project File 3.0
 # Compiled with Gambas 3.7.90
-Title=Portal Emulación - Atari - NES - SNES - N64
+Title=Emulación NES - SNES - Nintendo 64
 Startup=FMain
-Version=0.1.2
+Version=0.0.1
 Component=gb.image
 Component=gb.gtk
 Component=gb.form
 Component=gb.settings
-Description="Portal o plataforma de juegos basado en emulación de juegos de atari, NES, Super Nintendo y Nintendo 64 para niños mayores de 4 años."
-Authors="Oscar Díaz (@skrdz)"
 TabSize=2
-Language=es
 Packager=1
-WebSite=  
