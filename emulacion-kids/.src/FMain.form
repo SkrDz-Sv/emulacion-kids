@@ -6,8 +6,10 @@
   Text = ("Emulación Atari - NES - SNES - N64")
   Icon = Picture["img/icono.png"]
   Picture = Picture["img/pt.jpg"]
+  Persistent = True
   Maximized = True
   FullScreen = True
+  Sticky = True
   { btnAtari Button
     MoveScaled(5,3,53,29)
     Background = Color.TextForeground

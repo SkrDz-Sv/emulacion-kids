@@ -54,7 +54,7 @@ Public Sub Device_Read()
     Dim value As Short
     Dim myevent As Byte
     Dim number As Byte
-    Dim test As String
+'    Dim test As String
     
     Read #jsdev, stamp, 4 ' 4 bytes
     Read #jsdev, value, 2 ' 2 bytes

@@ -9,6 +9,8 @@ Private resultados As Result
 
 Public Sub Form_Open()
 
+  Settings["Info/roms"] = "~/Descargas/roms/"
+
 End
 
 
@@ -30,8 +32,6 @@ Public Sub btnAtari_Click()
   prepararLista()
   Conectar()
   mostrarResultados(1)
-  
-  'Shell "stella -fullscreen 1 ~/Descargas/roms/bobby_is_going_home.A26"
 
 End
 
@@ -39,7 +39,7 @@ Public Sub mostrarResultados(emulador As Integer)
   
   resultados = $con.Exec("select * from roms where idemulador = " & emulador)
   While resultados.Available
-    lbRoms.Add(resultados!descripcion)
+    lbRoms.Add(resultados["descripcion"])
     resultados.MoveNext
   Wend
   $con.Close()
@@ -87,7 +87,23 @@ End
 
 Public Sub lbRoms_Activate()
 
-  Message.Info(lbRoms.Current.Text)
+  Dim seleccionado As String 
+  Dim nombre As Result
+  seleccionado = lbRoms.Current.Text
+  Conectar()
+  nombre = $con.Exec("select idemulador,nombre from roms where descripcion = '" & seleccionado & "'")
+  'Message.Info(nombre["nombre"])
+  If nombre["idemulador"] == 1 Then
+    Shell "stella -fullscreen 1 " & Settings["Info/roms"] & nombre["nombre"]
+  Else If nombre["idemulador"] == 2 Then
+    Shell "fceux --nogui 0 -f 1 " & Settings["Info/roms"] & nombre["nombre"]
+  Else If nombre["idemulador"] == 3 Then
+    Shell "zsnes -1 1 -m -v 4 " & Settings["Info/roms"] & nombre["nombre"]
+  Else If nombre["idemulador"] == 4 Then
+    Shell "mupen64plus --fullscreen " & Settings["Info/roms"] & nombre["nombre"]
+  Endif
+  btnCancelar_Click()
+  $con.Close()
 
 End
 
