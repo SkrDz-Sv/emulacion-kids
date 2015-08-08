@@ -2,7 +2,7 @@
 # Compiled with Gambas 3.7.90
 Title=Emulación NES - SNES - Nintendo 64
 Startup=FMain
-Version=0.0.5
+Version=0.0.9
 Component=gb.image
 Component=gb.gtk
 Component=gb.form
@@ -16,7 +16,7 @@ Vendor=SkrDz-Sv
 Address=skrdz1984@gmail.com
 Url=http://skrdz-sv.github.io/emulacion-kids/
 License=General Public License
-PackageName=emulacion-kids-0.0.2
+PackageName=emulacion-kids-0.0.9
 CreateEachDirectory=1
 Packager=1
 Systems=ubuntu

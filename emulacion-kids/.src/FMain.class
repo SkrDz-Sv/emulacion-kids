@@ -94,13 +94,13 @@ Public Sub lbRoms_Activate()
   nombre = $con.Exec("select idemulador,nombre from roms where descripcion = '" & seleccionado & "'")
   'Message.Info(nombre["nombre"])
   If nombre["idemulador"] == 1 Then
-    Shell "stella -fullscreen 1 " & Settings["Info/roms"] & nombre["nombre"]
+    Shell "stella -fullscreen 1 -fulres auto " & Settings["Info/roms"] & nombre["nombre"]
   Else If nombre["idemulador"] == 2 Then
     Shell "fceux --nogui 0 -f 1 " & Settings["Info/roms"] & nombre["nombre"]
   Else If nombre["idemulador"] == 3 Then
-    Shell "zsnes -1 1 -m -v 4 " & Settings["Info/roms"] & nombre["nombre"]
+    Shell "zsnes -1 1 -m -v 11 " & Settings["Info/roms"] & nombre["nombre"]
   Else If nombre["idemulador"] == 4 Then
-    Shell "mupen64plus --fullscreen " & Settings["Info/roms"] & nombre["nombre"]
+    Shell "/usr/games/mupen64plus --fullscreen " & Settings["Info/roms"] & nombre["nombre"]
   Endif
   btnCancelar_Click()
   $con.Close()

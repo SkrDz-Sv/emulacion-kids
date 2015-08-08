@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sat, 08 Aug 2015 12:00:00 +0000
+Source: emulacion-kids
+Binary: emulacion-kids
+Architecture: source all
+Version: 0.0.9-0ubuntu1
+Distribution: unstable
+Urgency: low
+Maintainer: Ing. Oscar Díaz <skrdz1984@gmail.com>
+Changed-By: Ing. Oscar Díaz <skrdz1984@gmail.com>
+Description: 
+ emulacion-kids - Emulación NES - SNES - Nintendo 64
+Changes: 
+ emulacion-kids (0.0.9-0ubuntu1) unstable; urgency=low
+ .
+   * Funcionamiento básico
+Checksums-Sha1: 
+ f7584c3443696315520ca8acd7dabfe6239f3b98 1243 emulacion-kids_0.0.9-0ubuntu1.dsc
+ 85d3dc2c3d1a316b95ba9d3003e1485bd5b48c08 1193 emulacion-kids_0.0.9-0ubuntu1.diff.gz
+ ef06608abe9fd25f6484d3d6700c5d2660776920 967766 emulacion-kids_0.0.9-0ubuntu1_all.deb
+Checksums-Sha256: 
+ 7a25461105892fb7f7beba538055e4e7af4efa22a3886b284755ce3766e4a8b8 1243 emulacion-kids_0.0.9-0ubuntu1.dsc
+ 8244fa2ca3f315652358ad0d12d892ba27b567193fb2a41660535b7d786da8d7 1193 emulacion-kids_0.0.9-0ubuntu1.diff.gz
+ fe6270c01faa5a869f1537b7e1a667ce78a238b225ad142b7e9a2f6d76be2201 967766 emulacion-kids_0.0.9-0ubuntu1_all.deb
+Files: 
+ 5504205199efb1768c671fc55c4a0528 1243 contrib/games optional emulacion-kids_0.0.9-0ubuntu1.dsc
+ 0c55019d6c09eefc81160d3fc95cd5b0 1193 contrib/games optional emulacion-kids_0.0.9-0ubuntu1.diff.gz
+ b56fcb364a498e570db2d599016350c2 967766 contrib/games optional emulacion-kids_0.0.9-0ubuntu1_all.deb
