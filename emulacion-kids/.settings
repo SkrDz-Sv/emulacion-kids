@@ -11,10 +11,11 @@ Path="exec/emulacion-kids.gambas"
 LastCommit="Adición de ejecutable (gambas) y paquete de instalación para la distribución Ubuntu.\n\n---- Esta línea y las siguientes serán ignoradas ----\n\nM       .gambas/GDKJOYSTICK\nA       .hidden\nA       .hidden/CHANGELOG\nM       .project\nM       .settings\nM       .startup\nA       distribucion\nA       distribucion/ubuntu\nA       distribucion/ubuntu/emulacion-kids_0.0.2-0ubuntu1.diff.gz\nA       distribucion/ubuntu/emulacion-kids_0.0.2-0ubuntu1.dsc\nA       distribucion/ubuntu/emulacion-kids_0.0.2-0ubuntu1_all.deb\nA       distribucion/ubuntu/emulacion-kids_0.0.2-0ubuntu1_amd64.changes\nA       distribucion/ubuntu/emulacion-kids_0.0.2.orig.tar.gz\nA       exec\nA       exec/emulacion-kids.gambas"
 
 [OpenFile]
-Count=2
-Active=1
+Count=3
+Active=2
 File[1]=".src/FMain.form"
-File[2]=".src/gdkjoystick.class:17.68"
+File[2]=".src/FMain.class:38.26"
+File[3]=".connection/link.connection"
 
 [VersionControl]
 User="skrdz"

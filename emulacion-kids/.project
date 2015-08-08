@@ -2,7 +2,7 @@
 # Compiled with Gambas 3.7.90
 Title=Emulación NES - SNES - Nintendo 64
 Startup=FMain
-Version=0.0.2
+Version=0.0.5
 Component=gb.image
 Component=gb.gtk
 Component=gb.form

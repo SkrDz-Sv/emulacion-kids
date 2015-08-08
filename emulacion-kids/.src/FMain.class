@@ -4,6 +4,9 @@ Public Sub _new()
 
 End
 
+Public $con As New Connection
+Private resultados As Result
+
 Public Sub Form_Open()
 
 End
@@ -20,4 +23,94 @@ Public Sub btnConfig_Click()
   Dim config As New FrmConfig
   config.Show()
   
+End
+
+Public Sub btnAtari_Click()
+
+  prepararLista()
+  Conectar()
+  mostrarResultados(1)
+  
+  'Shell "stella -fullscreen 1 ~/Descargas/roms/bobby_is_going_home.A26"
+
+End
+
+Public Sub mostrarResultados(emulador As Integer)
+  
+  resultados = $con.Exec("select * from roms where idemulador = " & emulador)
+  While resultados.Available
+    lbRoms.Add(resultados!descripcion)
+    resultados.MoveNext
+  Wend
+  $con.Close()
+  
+End
+
+
+Public Sub Conectar()
+  
+  $con = Connections["conex"]
+  If $con = Null Then
+    Message.Error("Error en conexión a BD")
+    $con = Null
+  Endif
+  Try $con.Open()
+  If Error Then
+    Message.Error("Error en conexión a BD - " & Error.Text & " - " & Error.Code & " - " & Error.Where)
+  Endif
+End
+
+Public Sub prepararLista()
+  
+  lbRoms.Clear
+  lbRoms.Visible = True
+  btnCancelar.Visible = True
+  btnAtari.Visible = False
+  btnNes.Visible = False
+  btnSnes.Visible = False
+  btnN64.Visible = False
+  
+End
+
+
+Public Sub btnCancelar_Click()
+
+  lbRoms.Visible = False
+  btnCancelar.Visible = False
+  btnAtari.Visible = True
+  btnNes.Visible = True
+  btnSnes.Visible = True
+  btnN64.Visible = True
+
+End
+
+
+Public Sub lbRoms_Activate()
+
+  Message.Info(lbRoms.Current.Text)
+
+End
+
+Public Sub btnNes_Click()
+
+  prepararLista()
+  Conectar()
+  mostrarResultados(2)
+
+End
+
+Public Sub btnSnes_Click()
+
+  prepararLista()
+  Conectar()
+  mostrarResultados(3)
+
+End
+
+Public Sub btnN64_Click()
+
+  prepararLista()
+  Conectar()
+  mostrarResultados(4)
+
 End
