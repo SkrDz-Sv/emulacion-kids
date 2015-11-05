@@ -1,25 +1,26 @@
 # Gambas Project File 3.0
-# Compiled with Gambas 3.1.1
+# Compiled with Gambas 3.8.2
 Title=Emulación NES - SNES - Nintendo 64
 Startup=FMain
-Version=0.0.14
+Version=0.0.15
 Component=gb.image
 Component=gb.gtk
 Component=gb.form
 Component=gb.db
 Component=gb.db.sqlite3
 Component=gb.settings
+Description="Portal de emulación de consolas retro de video juegos y reproductor de vídeos para niños"
 TabSize=2
 Language=es
-ExecPath=exec/emulacion-kids.gambas
 Maintainer=Ing. Oscar Díaz
 Vendor=SkrDz-Sv
 Address=skrdz1984@gmail.com
 Url=http://skrdz-sv.github.io/emulacion-kids/
 License=General Public License
-PackageName=emulacion-kids-0.0
+PackageName=emulacion-kids-0.0.15
 CreateEachDirectory=1
 Packager=1
 Systems=ubuntu
 Menus=ubuntu:"Games/Tools"
 Groups=ubuntu:"games"
+ExtraDependencies=ubuntu:"\t\t"

@@ -1,7 +1,7 @@
 # Gambas Form File 3.0
 
 { Form Form
-  MoveScaled(0,0,156,81)
+  MoveScaled(0,0,118,81)
   Mouse = Mouse.Cross
   Text = ("Emulación Atari - NES - SNES - N64")
   Icon = Picture["img/icono.png"]
@@ -10,6 +10,18 @@
   Maximized = True
   FullScreen = True
   Sticky = True
+  { btnVideo Button
+    MoveScaled(5,64,13,13)
+    Background = Color.TextForeground
+    ToolTip = ("Reproductor de Vídeos")
+    Text = (" ")
+    Picture = Picture["img/video.png"]
+  }
+  { btnCancelar Button
+    MoveScaled(-3,77,121,4)
+    Visible = False
+    Text = ("CANCELAR")
+  }
   { btnAtari Button
     MoveScaled(5,3,53,29)
     Background = Color.TextForeground
@@ -26,27 +38,19 @@
     Text = (" ")
     Picture = Picture["img/snes.png"]
   }
-  { btnN64 Button
-    MoveScaled(62,35,53,29)
-    Background = Color.TextForeground
-    ToolTip = ("Juegos de Nintendo 64")
-    Expand = True
-    Text = (" ")
-    Picture = Picture["img/n64.png"]
-  }
-  { btnConfig2 Button
-    MoveScaled(101,67,13,13)
-    Background = Color.TextForeground
-    ToolTip = ("Apagar Computadora")
-    Text = (" ")
-    Picture = Picture["img/cerrar.png"]
-  }
   { btnConfig Button
-    MoveScaled(5,67,13,13)
+    MoveScaled(89,64,13,13)
     Background = Color.TextForeground
     ToolTip = ("Configuración General")
     Text = (" ")
     Picture = Picture["img/config.png"]
+  }
+  { btnReparar Button
+    MoveScaled(18,64,13,13)
+    Background = Color.TextForeground
+    ToolTip = ("Reparar resolución")
+    Text = (" ")
+    Picture = Picture["img/reparar.png"]
   }
   { btnNes Button
     MoveScaled(62,3,53,29)
@@ -56,14 +60,30 @@
     Text = (" ")
     Picture = Picture["img/nes.png"]
   }
+  { btnN64 Button
+    MoveScaled(62,35,53,29)
+    Background = Color.TextForeground
+    ToolTip = ("Juegos de Nintendo 64")
+    Expand = True
+    Text = (" ")
+    Picture = Picture["img/n64.png"]
+  }
+  { btnConfig2 Button
+    MoveScaled(102,64,13,13)
+    Background = Color.TextForeground
+    ToolTip = ("Apagar Computadora")
+    Text = (" ")
+    Picture = Picture["img/cerrar.png"]
+  }
   { lbRoms ListBox
-    MoveScaled(19,0,110,73)
+    MoveScaled(0,1,118,76)
     Visible = False
     Font = Font["+3"]
   }
-  { btnCancelar Button
-    MoveScaled(4.8571,75.8571,110,5)
+  { fcVideos FileChooser
+    MoveScaled(0,1,118,76)
     Visible = False
-    Text = ("CANCELAR")
+    ShowBookmark = False
+    ShowFile = False
   }
 }

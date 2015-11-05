@@ -13,9 +13,8 @@ LastCommit="Adición de ejecutable (gambas) y paquete de instalación para la di
 [OpenFile]
 File[1]=".src/FMain.form"
 Active=2
-File[2]=".src/FMain.class:19.12"
-File[3]=".src/frmConfig.form"
-Count=3
+File[2]=".src/FMain.class:29.198"
+Count=2
 
 [VersionControl]
 User="skrdz"

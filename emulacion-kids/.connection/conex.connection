@@ -1,7 +1,7 @@
 # Gambas Connection File 3.0
 [Connection]
 Type="sqlite"
-Path="/home/oscard/emulacion-kids/bd.sqlite3"
+Path="/home/oscard/desarrollo/e-k/emulacion-kids.git/trunk/bd.sqlite3"
 RememberPassword=False
 IgnoreCharset=False
 DisplayMetadata=False

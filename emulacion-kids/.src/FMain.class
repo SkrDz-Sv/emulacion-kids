@@ -6,9 +6,15 @@ End
 
 Public $con As New Connection
 Private resultados As Result
+Private videok As String
+Private home As String
 
 Public Sub Form_Open()
 
+  Dim grupo As String 
+  Shell "id -g" To grupo
+  Shell "mkdir ~/emulacion-kids/ ~/emulacion-kids/roms ~/emulacion-kids/videos"
+  Shell "sudo chown -R root:" & Left$(grupo, 4) & " ~/emulacion-kids/videos ; sudo chmod -R 774 ~/emulacion-kids/videos"
   Settings["Info/roms"] = "~/emulacion-kids/roms/"
 
 End
@@ -64,8 +70,12 @@ End
 
 Public Sub prepararLista()
   
-  lbRoms.Clear
-  lbRoms.Visible = True
+  If videok = 1 Then
+    fcVideos.Visible = True
+  Else
+    lbRoms.Clear
+    lbRoms.Visible = True
+  Endif
   btnCancelar.Visible = True
   btnAtari.Visible = False
   btnNes.Visible = False
@@ -77,7 +87,12 @@ End
 
 Public Sub btnCancelar_Click()
 
-  lbRoms.Visible = False
+  If videok = 1 Then
+    fcVideos.Visible = False
+    videok = 0
+  Else
+    lbRoms.Visible = False
+  Endif
   btnCancelar.Visible = False
   btnAtari.Visible = True
   btnNes.Visible = True
@@ -135,7 +150,7 @@ End
 
 Public Sub lbRoms_DblClick()
 
-Dim seleccionado As String 
+  Dim seleccionado As String 
   Dim nombre As Result
   seleccionado = lbRoms.Current.Text
   Conectar()
@@ -154,3 +169,41 @@ Dim seleccionado As String
   $con.Close()  
 
 End
+
+Public Sub lbRoms_Click()
+
+  
+
+End
+
+Public Sub btnReparar_Click()
+
+  Shell "xrandr --output VGA-0 --mode 1024x768"
+
+End
+
+Public Sub btnVideo_Click()
+
+  Shell "echo ~" To home
+  home = Left$(home, Len(home) - 1)
+  'Print home
+  fcVideos.Root = home & "/emulacion-kids/videos"
+  videok = 1
+  prepararLista()
+
+End
+
+
+Public Sub fcVideos_Change()
+
+  Dim seleccionado As String 
+  seleccionado = fcVideos.SelectedPath
+  'Print seleccionado
+  If seleccionado <> "" Then
+    Shell "TERM=xterm sudo mplayer -fs \"" & seleccionado & "\""
+    Print "TERM=xterm sudo mplayer -fs \"" & seleccionado & "\""
+    'finvideo()
+  Endif
+
+End
+
