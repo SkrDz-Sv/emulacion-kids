@@ -35,14 +35,14 @@
     Picture = Picture["img/n64.png"]
   }
   { btnConfig2 Button
-    MoveScaled(101,67,14,14)
+    MoveScaled(101,67,13,13)
     Background = Color.TextForeground
     ToolTip = ("Apagar Computadora")
     Text = (" ")
     Picture = Picture["img/cerrar.png"]
   }
   { btnConfig Button
-    MoveScaled(5,67,14,14)
+    MoveScaled(5,67,13,13)
     Background = Color.TextForeground
     ToolTip = ("Configuración General")
     Text = (" ")
@@ -57,12 +57,12 @@
     Picture = Picture["img/nes.png"]
   }
   { lbRoms ListBox
-    MoveScaled(5,3,110,57)
+    MoveScaled(19,0,110,73)
     Visible = False
-    Font = Font["+5"]
+    Font = Font["+3"]
   }
   { btnCancelar Button
-    MoveScaled(5,59.875,110,5)
+    MoveScaled(4.8571,75.8571,110,5)
     Visible = False
     Text = ("CANCELAR")
   }

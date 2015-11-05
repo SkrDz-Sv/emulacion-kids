@@ -1,3 +1,15 @@
+* Wed Oct 07 2015 Ing. Oscar Díaz <skrdz1984@gmail.com> 0.0
+- sudo agregado correctamente (modificacion de /etc/sudoers) e inicio automatico activado
+
+* Wed Oct 07 2015 Ing. Oscar Díaz <skrdz1984@gmail.com> 0.0
+- abrir terminal en config y agregar sudo a apagado de equipo
+
+* Wed Oct 07 2015 Ing. Oscar Díaz <skrdz1984@gmail.com> 0.0
+- Agregar apagado de equipo
+
+* Wed Oct 07 2015 Ing. Oscar Díaz <skrdz1984@gmail.com> 0.0
+- Beta
+
 * Sat Aug 08 2015 Ing. Oscar Díaz <skrdz1984@gmail.com> 0.0.9
 - Funcionamiento básico
 

@@ -9,21 +9,23 @@ Private resultados As Result
 
 Public Sub Form_Open()
 
-  Settings["Info/roms"] = "~/Descargas/roms/"
+  Settings["Info/roms"] = "~/emulacion-kids/roms/"
 
 End
 
 
 Public Sub btnConfig2_Click()
 
+  Shell "sudo shutdown -hP now"
   Me.Close()
 
 End
 
 Public Sub btnConfig_Click()
 
-  Dim config As New FrmConfig
-  config.Show()
+  'Dim config As New FrmConfig
+  'config.Show()
+  Shell "gnome-terminal"
   
 End
 
@@ -37,7 +39,7 @@ End
 
 Public Sub mostrarResultados(emulador As Integer)
   
-  resultados = $con.Exec("select * from roms where idemulador = " & emulador)
+  resultados = $con.Exec("select * from roms where idemulador = " & emulador & " order by descripcion ")
   While resultados.Available
     lbRoms.Add(resultados["descripcion"])
     resultados.MoveNext
@@ -96,9 +98,9 @@ Public Sub lbRoms_Activate()
   If nombre["idemulador"] == 1 Then
     Shell "stella -fullscreen 1 -fulres auto " & Settings["Info/roms"] & nombre["nombre"]
   Else If nombre["idemulador"] == 2 Then
-    Shell "fceux --nogui 0 -f 1 " & Settings["Info/roms"] & nombre["nombre"]
+    Shell "fceux --nogui 0 -f 1 --openglip 1 " & Settings["Info/roms"] & nombre["nombre"]
   Else If nombre["idemulador"] == 3 Then
-    Shell "zsnes -1 1 -m -v 11 " & Settings["Info/roms"] & nombre["nombre"]
+    Shell "zsnes -1 1 -m -v 11 -y " & Settings["Info/roms"] & nombre["nombre"]
   Else If nombre["idemulador"] == 4 Then
     Shell "/usr/games/mupen64plus --fullscreen " & Settings["Info/roms"] & nombre["nombre"]
   Endif
@@ -128,5 +130,27 @@ Public Sub btnN64_Click()
   prepararLista()
   Conectar()
   mostrarResultados(4)
+
+End
+
+Public Sub lbRoms_DblClick()
+
+Dim seleccionado As String 
+  Dim nombre As Result
+  seleccionado = lbRoms.Current.Text
+  Conectar()
+  nombre = $con.Exec("select idemulador,nombre from roms where descripcion = '" & seleccionado & "'")
+  'Message.Info(nombre["nombre"])
+  If nombre["idemulador"] == 1 Then
+    Shell "stella -fullscreen 1 -fulres auto " & Settings["Info/roms"] & nombre["nombre"]
+  Else If nombre["idemulador"] == 2 Then
+    Shell "fceux --nogui 0 -f 1 --openglip 1 " & Settings["Info/roms"] & nombre["nombre"]
+  Else If nombre["idemulador"] == 3 Then
+    Shell "zsnes -1 1 -m -v 11 -y " & Settings["Info/roms"] & nombre["nombre"]
+  Else If nombre["idemulador"] == 4 Then
+    Shell "/usr/games/mupen64plus --fullscreen " & Settings["Info/roms"] & nombre["nombre"]
+  Endif
+  btnCancelar_Click()
+  $con.Close()  
 
 End
