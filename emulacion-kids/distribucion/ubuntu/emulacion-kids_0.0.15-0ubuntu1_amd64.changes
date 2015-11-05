@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 05 Nov 2015 12:00:00 +0000
+Source: emulacion-kids
+Binary: emulacion-kids
+Architecture: source all
+Version: 0.0.15-0ubuntu1
+Distribution: unstable
+Urgency: low
+Maintainer: Ing. Oscar Díaz <skrdz1984@gmail.com>
+Changed-By: Ing. Oscar Díaz <skrdz1984@gmail.com>
+Description:
+ emulacion-kids - Portal de emulación de consolas retro de video juegos y reprodu..
+Changes:
+ emulacion-kids (0.0.15-0ubuntu1) unstable; urgency=low
+ .
+   * Adición de funcionabilidad de reproducción de vídeos y resolución de bugs.
+Checksums-Sha1:
+ 416b4e08e9e8fa23e217a216efe2af69f35cc733 1255 emulacion-kids_0.0.15-0ubuntu1.dsc
+ 7322b14efdb5faeca5e98a4c2a1afd0af4184ca7 1419 emulacion-kids_0.0.15-0ubuntu1.diff.gz
+ ec07e54140642abd60b6517c447b28f4191a25b5 1771444 emulacion-kids_0.0.15-0ubuntu1_all.deb
+Checksums-Sha256:
+ 7f7b00a91624fd4f63e8a7184a9eb4beb32dee0814457976a60dacd79ca1425e 1255 emulacion-kids_0.0.15-0ubuntu1.dsc
+ fe8865047c2da9d04f9be8a63c309680fe66bd689f3d784a75522a6aa11a0eb6 1419 emulacion-kids_0.0.15-0ubuntu1.diff.gz
+ 34a7f4af57d3848d9ffde4f9a6cc2db55182f6d4b143be42927068af6a490ae1 1771444 emulacion-kids_0.0.15-0ubuntu1_all.deb
+Files:
+ 431478c93d21b8661d10ac98994d05c1 1255 contrib/games optional emulacion-kids_0.0.15-0ubuntu1.dsc
+ e4602b7d227f7e5c38a5c7c375f9646c 1419 contrib/games optional emulacion-kids_0.0.15-0ubuntu1.diff.gz
+ f2bab1370bbb852a0ed0ec662f265471 1771444 contrib/games optional emulacion-kids_0.0.15-0ubuntu1_all.deb
