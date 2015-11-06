@@ -3,7 +3,7 @@
 Title=Emulación NES - SNES - Nintendo 64
 Startup=FMain
 Icon=img/emulador.png
-Version=0.0.15
+Version=0.0.16
 Component=gb.image
 Component=gb.gtk
 Component=gb.form
@@ -19,7 +19,7 @@ Vendor=SkrDz-Sv
 Address=skrdz1984@gmail.com
 Url=http://skrdz-sv.github.io/emulacion-kids/
 License=General Public License
-PackageName=emulacion-kids-0.0.15
+PackageName=emulacion-kids-0.0.16
 CreateEachDirectory=1
 Packager=1
 Systems=ubuntu
