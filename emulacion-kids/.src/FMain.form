@@ -83,6 +83,8 @@
   { fcVideos FileChooser
     MoveScaled(0,1,118,76)
     Visible = False
+    Font = Font["+3"]
+    ShowDetailed = True
     ShowBookmark = False
     ShowFile = False
   }

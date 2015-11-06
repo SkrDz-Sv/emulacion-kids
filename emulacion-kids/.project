@@ -2,6 +2,7 @@
 # Compiled with Gambas 3.8.2
 Title=Emulación NES - SNES - Nintendo 64
 Startup=FMain
+Icon=img/emulador.png
 Version=0.0.15
 Component=gb.image
 Component=gb.gtk
@@ -9,7 +10,8 @@ Component=gb.form
 Component=gb.db
 Component=gb.db.sqlite3
 Component=gb.settings
-Description="Portal de emulación de consolas retro de video juegos y reproductor de vídeos para niños"
+Description="Portal de emulación de consolas retro de video juegos y reproductor de vídeos para niños. El objetivo, es hacer de una netbook (mini laptop) por ejemplo, una consola dedicada a entretenimiento de niños mayores de 4 años."
+Authors="Ing. Oscar Díaz"
 TabSize=2
 Language=es
 Maintainer=Ing. Oscar Díaz
@@ -21,6 +23,8 @@ PackageName=emulacion-kids-0.0.15
 CreateEachDirectory=1
 Packager=1
 Systems=ubuntu
-Menus=ubuntu:"Games/Tools"
+Menus=ubuntu:"Games/Simulation"
+Categories=ubuntu:"Simulation"
 Groups=ubuntu:"games"
 ExtraDependencies=ubuntu:"\t\t"
+ExtraFiles=ubuntu:"bd-emulacion\t/opt/"

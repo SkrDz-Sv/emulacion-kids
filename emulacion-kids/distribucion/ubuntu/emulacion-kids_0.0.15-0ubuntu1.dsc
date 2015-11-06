@@ -9,11 +9,11 @@ Build-Depends: debhelper (>= 5.0.0), gambas3-dev (>= 3.8), gambas3-dev (<< 3.99.
 Package-List:
  emulacion-kids deb contrib/games optional arch=all
 Checksums-Sha1:
- edcb112e631385993d5ea5346b8aa08cc3991625 4735916 emulacion-kids_0.0.15.orig.tar.gz
- 7322b14efdb5faeca5e98a4c2a1afd0af4184ca7 1419 emulacion-kids_0.0.15-0ubuntu1.diff.gz
+ 035300ded0d6dc9c64edad3dedce7ba556b69829 6910206 emulacion-kids_0.0.15.orig.tar.gz
+ 4ad6e2508cc52d61cdde2f1146ed5be9b7bc1ae7 1572 emulacion-kids_0.0.15-0ubuntu1.diff.gz
 Checksums-Sha256:
- a0cb4a5c4b431b4659353b1ef0fc4bb8d514882b0d83830a9025ff415f1fed52 4735916 emulacion-kids_0.0.15.orig.tar.gz
- fe8865047c2da9d04f9be8a63c309680fe66bd689f3d784a75522a6aa11a0eb6 1419 emulacion-kids_0.0.15-0ubuntu1.diff.gz
+ 806df4cb5a251fc6bbaec6f0c40b53858dcd82af8b9edddf3f5618c496b00300 6910206 emulacion-kids_0.0.15.orig.tar.gz
+ 09dd12e5f81e96c4829e40908d59bfb9e9929e295ca43228a7f2978e480fc420 1572 emulacion-kids_0.0.15-0ubuntu1.diff.gz
 Files:
- 3c1a0597046a7286f9c5f44cd1794928 4735916 emulacion-kids_0.0.15.orig.tar.gz
- e4602b7d227f7e5c38a5c7c375f9646c 1419 emulacion-kids_0.0.15-0ubuntu1.diff.gz
+ b1c1b3ab98f56f64a487537f2ede5300 6910206 emulacion-kids_0.0.15.orig.tar.gz
+ 9a9271c3b56336074076738a0ea4f98c 1572 emulacion-kids_0.0.15-0ubuntu1.diff.gz

@@ -15,7 +15,7 @@ Public Sub Form_Open()
   Shell "id -g" To grupo
   Shell "mkdir ~/emulacion-kids/ ~/emulacion-kids/roms ~/emulacion-kids/videos"
   Shell "sudo chown -R root:" & Left$(grupo, 4) & " ~/emulacion-kids/videos ; sudo chmod -R 774 ~/emulacion-kids/videos"
-  Settings["Info/roms"] = "~/emulacion-kids/roms/"
+  Settings["Info/roms"] = User.home & "/emulacion-kids/roms/"
 
 End
 
@@ -57,19 +57,30 @@ End
 
 Public Sub Conectar()
   
-  $con = Connections["conex"]
-  If $con = Null Then
-    Message.Error("Error en conexión a BD")
-    $con = Null
-  Endif
-  Try $con.Open()
-  If Error Then
-    Message.Error("Error en conexión a BD - " & Error.Text & " - " & Error.Code & " - " & Error.Where)
-  Endif
+  
+    $con.Name = "/opt/bd-emulacion"
+    $con.Type = "sqlite3"
+    $con.host = Application.Path
+    Try $con.open
+    If Error Then
+      Message.Error("Error en conexión a BD - " & Error.Text & " - " & Error.Code & " - " & Error.Where)
+    Endif
+    
+    
+  '$con = Connections["conex"]
+  'If $con = Null Then
+  '  Message.Error("Error en conexión a BD")
+  '  $con = Null
+  'Endif
+  'Try $con.Open()
+  'If Error Then
+  '  Message.Error("Error en conexión a BD - " & Error.Text & " - " & Error.Code & " - " & Error.Where)
+  'Endif
 End
 
 Public Sub prepararLista()
   
+  Shell "xrandr --output VGA1 --mode 1024x768"
   If videok = 1 Then
     fcVideos.Visible = True
   Else
@@ -87,6 +98,7 @@ End
 
 Public Sub btnCancelar_Click()
 
+  Shell "xrandr --output VGA1 --mode 1024x768"
   If videok = 1 Then
     fcVideos.Visible = False
     videok = 0
@@ -178,7 +190,7 @@ End
 
 Public Sub btnReparar_Click()
 
-  Shell "xrandr --output VGA-0 --mode 1024x768"
+  Shell "xrandr --output VGA1 --mode 1024x768"
 
 End
 
