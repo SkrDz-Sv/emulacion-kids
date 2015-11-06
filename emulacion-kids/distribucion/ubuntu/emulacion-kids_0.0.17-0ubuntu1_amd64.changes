@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Fri, 06 Nov 2015 12:00:00 +0000
+Source: emulacion-kids
+Binary: emulacion-kids
+Architecture: source all
+Version: 0.0.17-0ubuntu1
+Distribution: unstable
+Urgency: low
+Maintainer: Ing. Oscar Díaz <skrdz1984@gmail.com>
+Changed-By: Ing. Oscar Díaz <skrdz1984@gmail.com>
+Description:
+ emulacion-kids - Portal de emulación de consolas retro de video juegos y reprodu..
+Changes:
+ emulacion-kids (0.0.17-0ubuntu1) unstable; urgency=low
+ .
+   * Reparación al ejecutar rom, cambio de nombre y otros
+Checksums-Sha1:
+ cd8b48d27c09ce845d1267e5f3f6320caacebce2 1258 emulacion-kids_0.0.17-0ubuntu1.dsc
+ b0bc51aaf043a680ad95f49e564131ab8dc8c01f 1631 emulacion-kids_0.0.17-0ubuntu1.diff.gz
+ 9247c89905d09415c973fff5175c6a9fb63ca677 13130344 emulacion-kids_0.0.17-0ubuntu1_all.deb
+Checksums-Sha256:
+ 66afbd42927f9abe7b15f420a75ce74610522b01f6ecc2c58cb8181f8b30035e 1258 emulacion-kids_0.0.17-0ubuntu1.dsc
+ 2064c5ae8770312ca95c0c1156f46d1e198747b14e073a1296336df591ec75f8 1631 emulacion-kids_0.0.17-0ubuntu1.diff.gz
+ b52c9ff0e8c6c57cfb32cb304d587c65267f0a69f242fb79b273c644964c79ea 13130344 emulacion-kids_0.0.17-0ubuntu1_all.deb
+Files:
+ a71117373675409bda441bc92759535d 1258 contrib/games optional emulacion-kids_0.0.17-0ubuntu1.dsc
+ 81ca7a4e9a4fb51698b55a9a86b21dd2 1631 contrib/games optional emulacion-kids_0.0.17-0ubuntu1.diff.gz
+ c580503cf2c01dca225fab64d590df73 13130344 contrib/games optional emulacion-kids_0.0.17-0ubuntu1_all.deb
